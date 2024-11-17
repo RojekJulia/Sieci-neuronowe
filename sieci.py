@@ -48,7 +48,7 @@ test_generator = test_datagen.flow_from_directory(
     batch_size=BATCH_SIZE,
     class_mode='categorical'
 )
-# towrznie medelu 
+# towrznie medelu  7 warstw
 model = Sequential()
 
 model.add(Conv2D(32, (3, 3), activation='relu', input_shape=(IMAGE_SIZE[0], IMAGE_SIZE[1], 3)))
